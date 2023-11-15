@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa que cria uma lista e mostra na página.</title>
+</head>
+<body>
+
+    <h1>Mostra listas em JavaScript</h1>
+    <h1>Criação e apresentação de listas.</h1>
+    Digite os valores a serem inseridos na lista: <input type="number" name="txtnumero" id="txtnumero"> 
+    <br>
+    <br>
+    <input type="button" value="Criar lista." onclick="criarLista()">
+    <div id="res">
+    </div>
+ 
+    <script>
+        function calcularPrimo() {
+
+            var txtnum = window.document.getElementById('txtnumero')
+            var num =Number(txtnum.value)
+            var res = window.document.getElementById('res')
+
+            var vetor1 = []
+
+                vetor1.push(false)
+            
+            res.innerHTML = `<p> ${vetor1} </p>`
+            for (var i = 1; i <= num; i++){
+                if (vetorprimo[i] == "true") {
+                    res.innerHTML += `<p style="color:green"> O número ${i} Não é Primo.</p>`
+            }
+            else {
+                res.innerHTML += `<p style="color:red"> O número ${i} é Primo.</p>`
+            }
+        }
+    }
+    </script>
+</body>
+</html>
